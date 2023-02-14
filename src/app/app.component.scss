@@ -1,0 +1,169 @@
+$form-background-color: #f4f4f4;
+$form-border-color: #ccc;
+$form-border-radius: 5px;
+$input-border-color: #ccc;
+$input-border-radius: 5px;
+$input-font-size: 16px;
+$input-focus-border-color: #007bff;
+$input-focus-box-shadow: 0 0 5px #007bff;
+$button-background-color: #007bff;
+$button-color: #fff;
+$button-border-radius: 5px;
+$button-padding: 10px 20px;
+$button-font-size: 16px;
+$button-hover-background-color: #0069d9;
+$button-active-background-color: #005cbf;
+$error-color: red;
+$error-font-size: 14px;
+$error-margin: 5px 0;
+
+.form,
+.form-elements {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    padding: 20px;
+    background-color: $form-background-color;
+    border: 1px solid $form-border-color;
+    border-radius: $form-border-radius;
+
+    .form-element {
+        margin: 5px;
+    }
+
+    &__input {
+        margin: 10px 0;
+        padding: 10px;
+        width: 100%;
+        border: 1px solid $input-border-color;
+        border-radius: $input-border-radius;
+        font-size: $input-font-size;
+
+        &:focus {
+            outline: none;
+            border-color: $input-focus-border-color;
+            box-shadow: 0 0 5px $input-focus-box-shadow;
+        }
+    }
+
+    &__label {
+        font-weight: bold;
+    }
+
+    &__button {
+        background-color: $button-background-color;
+        color: $button-color;
+        border: none;
+        border-radius: $button-border-radius;
+        padding: $button-padding;
+        font-size: $button-font-size;
+        cursor: pointer;
+        margin-top: 10px;
+
+        &:hover {
+            background-color: $button-hover-background-color;
+        }
+
+        &:active {
+            background-color: $button-active-background-color;
+        }
+    }
+
+    &__error {
+        color: $error-color;
+        font-size: $error-font-size;
+        margin: $error-margin;
+    }
+}
+
+.form__title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form__field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.form__label {
+    margin-bottom: 5px;
+}
+
+.form__error {
+    margin-top: 5px;
+    color: red;
+    font-size: 14px;
+}
+
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+
+    &__th {
+        background-color: #007bff;
+        color: #fff;
+        font-weight: bold;
+        padding: 10px;
+        text-align: left;
+    }
+
+    &__td {
+        background-color: #f4f4f4;
+        border: 1px solid #ccc;
+        padding: 10px;
+    }
+
+    &__button {
+        background-color: #dc3545;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        padding: 5px 10px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #c82333;
+        }
+
+        &:active {
+            background-color: #bd2130;
+        }
+    }
+}
+
+.form {
+    flex-direction: column;
+}
+
+.form__button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+
+    &:hover {
+        background-color: #0069d9;
+    }
+
+    &:active {
+        background-color: #005cbf;
+    }
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
